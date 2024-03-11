@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <img src="imagenes/Logo.png"class="logo-alura"alt="logo alura">
+            <h2 class="titulo-inicial">Encriptador de Texto</h2>
+        </header>
+       
+        <main>           
+            <section class="seccion1">
+                <p>&#9888 Sólo letras minúsculas y sin acento</p>
+                <textarea id="texto_inicial" class="ingresoTexto" placeholder="Ingresa el texto que desea encriptar o desencriptar"></textarea>
+                <div class="botones">
+                    <button class="botonEncriptar" onclick="botonEncriptar()">Encriptar</button>
+                    <button class="botonDesencriptar" onclick="botonDesencriptar()">Desencriptar</button>
+                </div>
+            </section>     
+            <section class="seccion2">
+                <div class="imagen">
+                    <img src="imagenes/Muñeco.png" class="imagen"alt="imagen persona mirando un diamante">  
+                </div> 
+                <div class="textoh3">
+                    <h3>Ningún mensaje fue encontrado</h3>
+               </div>
+               <div class ="resultadoTexto">
+                    <p class="texto_resultado" id="resultado"></p>
+               </div>
+               <div class="cajabotonCopiar">
+                    <button class="botonCopiar" onclick="Copiar()">Copiar</button>
+                </div>
+            </section>          
+                          
+        </main>
+        <footer>
+           &copy Copyright - Marta Agudelo - 2024 
+        </footer>
+        <script src="app.js"></script>
+    </body>
+</html>
